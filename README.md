@@ -58,9 +58,10 @@ http://127.0.0.1:5000
 
 (Optional) Set up food recognition by integrating with a machine learning
 
-Usage
-Register or log in to the platform.
-Log your meals and view nutritional breakdowns.
-Use the food recognition feature to upload images and get nutritional data automatically.
-Set daily, weekly, or monthly goals.
-Get personalized recommendations and track progress over time.
+###Usage
+
+- Register or log in to the platform.
+- Log your meals and view nutritional breakdowns.
+- Use the food recognition feature to upload images and get nutritional data automatically.
+- Set daily, weekly, or monthly goals.
+- Get personalized recommendations and track progress over time.
