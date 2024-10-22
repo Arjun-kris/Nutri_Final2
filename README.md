@@ -58,7 +58,7 @@ http://127.0.0.1:5000
 
 (Optional) Set up food recognition by integrating with a machine learning
 
-###Usage
+### Usage
 
 - Register or log in to the platform.
 - Log your meals and view nutritional breakdowns.
