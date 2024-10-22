@@ -17,7 +17,7 @@
 - **Backend**: Flask
 - **Database**: SQLite
 - **Packages**: No state management, no storage
-- **Additional Feature**: Food recognition using a machine learning API (e.g., TensorFlow or a third-party API like Clarifai)
+- **Additional Feature**: Food recognition using a machine learning API
 
 ## Getting Started
 
@@ -40,10 +40,13 @@ Install backend dependencies:
 
 
 pip install -r requirements.txt
+
+
 Set up the database:
 
 SQLite is used as the database. The app will create the database automatically when you run the Flask app.
 (some of the missing files can be found in https://drive.google.com/drive/folders/1vvJkeWn4g0l105goKrBlwLEOlnUFNEUr?usp=sharing )
+
 
 Run the Flask server:
 
@@ -52,6 +55,7 @@ flask run
 Open the application in your browser:
 
 http://127.0.0.1:5000
+
 (Optional) Set up food recognition by integrating with a machine learning
 
 Usage
