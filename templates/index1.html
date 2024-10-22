@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Food Scanner</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ">
+	<link rel="stylesheet" href="static\css\w3.css">
+	<style>
+
+	</style>
+
+</head>
+
+<body style="margin-top: 30 px;">
+	<br>
+	<div class="w3-card w3-center" style="max-width:1100px;margin-top:30px; margin: auto; align-content: center;">
+		<h2 class="mt-5">NUTRIVISOR LIVE FOOD CAPTURE</h2>
+		<div class="row">
+			<div class="col-lg-8  offset-lg-2">
+
+				<form method="post" action="{{ url_for('tasks') }}">
+					<input class="w3-button w3-red w3-round" type="submit" value="Capture" name="click" />
+					<input class="w3-button w3-grey w3-round" type="submit" value="Analyse" name="click" />
+				</form>
+
+			</div>
+		</div>
+		<br>
+		<div class="w3-center">
+			<a class="w3-button w3-yellow w3-round" href="http://127.0.0.1:5100/U_Home_page"> Back</a>
+
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-8  offset-lg-2">
+				<img src="{{ url_for('video_feed') }}" height="50%" width="33.33%">
+			</div>
+			<br>
+
+			<div class="col-lg-8  offset-lg-2">
+				<img src="{{ url_for('capture_snap') }}" height="50%" width="33.33%">
+			</div>
+			<br>
+			<div class="col-lg-8  offset-lg-2">
+				<img src="{{ url_for('analyse_snap') }}" height="50%" width="33.33%">
+			</div>
+			<br>
+		</div>
+		<div class="row">
+
+			{% with messages = get_flashed_messages() %}
+			{% if messages %}
+			{% for message in messages%}
+			<p class="w3-container w3-grey w3-round" style="margin: 50px;">Predicted food is : {{message}}</p>
+			{%endfor%}
+			{% endif %}
+			{% endwith %}
+		</div>
+<br>
+
+
+
+	</div>
+</body>
+
+</html>
